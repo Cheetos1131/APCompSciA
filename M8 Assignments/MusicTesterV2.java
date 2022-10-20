@@ -1,3 +1,8 @@
+/**
+ * Purpose: Binary Search
+ * @author Iker Perez-Calderon
+ * @version 3/4/2022 probably
+ */
 public class MusicTesterV2 {
     public static void main(String[] args) {
         Music[] playList = new Music[10];
