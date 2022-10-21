@@ -50,12 +50,29 @@ public class MovieTester {
         
     }
 
+/**
+ * The output function prints out the contents of an array of Movie objects.
+ * 
+ *
+ * @param inputArray Pass the array of movies to be printed
+ *
+ * @return Nothing
+ */
     public static void output(Movie[] inputArray) {
         for(Movie i: inputArray) {
             System.out.println(i);
         }
     }
 
+/**
+ * The titleSort function takes in an array of Movie objects and sorts them by title.
+ * 
+ *
+ * @param source Pass in the array of movies that is being sorted
+ * @param parameter Determine whether the function should sort in ascending order or descending order
+ *
+ * @return The array of movies sorted by title
+ */
     public static Movie[] titleSort(Movie[] source, int parameter) {
         Movie[] destination = new Movie[source.length];
         if(parameter == 1) {
@@ -100,6 +117,15 @@ public class MovieTester {
         return destination;
     }
 
+/**
+ * The yearSort function sorts the movies in a given array by year.
+ * 
+ *
+ * @param source Pass in the array of movies that is being sorted
+ * @param parameter Determine whether the movies should be sorted in ascending order or descending order
+ *
+ * @return A movie[] of the movies in source, sorted by year
+ */
     public static Movie[] yearSort(Movie[] source, int parameter) {
         Movie[] destination = new Movie[source.length];
         if(parameter == 1) {
@@ -144,6 +170,15 @@ public class MovieTester {
         return destination;
     }
 
+/**
+ * The studioSort function takes in an array of Movie objects and sorts them by studio name.
+ * 
+ *
+ * @param source Determine which array to sort
+ * @param int Determine the order of the sort
+ *
+ * @return The sorted array of movies
+ */
     public static Movie[] studioSort(Movie[] source, int parameter) {
         Movie[] destination = new Movie[source.length];
         if(parameter == 1) {
